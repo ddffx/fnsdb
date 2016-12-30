@@ -1,0 +1,23 @@
+{
+  "name": "fnsdb",
+  "version": "0.0.1",
+  "description": "fns db",
+  "main": "index.js",
+  "author": "ddffx",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.3",
+    "lowdb": "^0.14.0",
+    "meow": "^3.7.0",
+    "node-fetch": "^1.6.3"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "cli": "cli.js"
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "lib"
+  ]
+}
