@@ -1,0 +1,15 @@
+# Used for development only
+---
+version: '2'
+services:
+  cli-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile-dev
+    command: /bin/sh
+    volumes:
+      - ./app:/usr/src/code
+    working_dir: /usr/src/code
+    environment: 
+      DB_NAME: fnsdb.json
+      DB_PATH: /data/db
