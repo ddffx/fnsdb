@@ -5,7 +5,14 @@ const fnsdbCli = require('.');
 
 const cli = meow(`
     Usage
+
+    Build the database
+    $ cli builddb
+
+    Find a specific url
     $ fnsdb find --url http://www.cnn.com
+    
+    Add a single url
     $ fnsdb add --url http://100percentfedup.com
 
     Options
