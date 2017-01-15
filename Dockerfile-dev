@@ -6,12 +6,4 @@ RUN npm set progress=false && \
 # Add a data VOLUME
 RUN mkdir -p /data/db
 VOLUME ['/data']
-# Add source
-ADD ./app /usr/local/app
-WORKDIR /usr/local/app
-# link current project globally
-RUN npm link
-# Download lastest from the sources
-RUN cli builddb
-# default shows the version of the tool
-CMD cli --version
+CMD [bin/sh]

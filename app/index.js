@@ -7,10 +7,17 @@ const fnsDBCli = (input, flags) => {
 				db.builddb();
                 break;
 			case 'find':
-				db.find();
+				let url = flags.url || 'NOT PRESENT';
+				db.find(url);
                 break;
 			case 'add':
 				db.add();
+                break;
+			case 'get-first':
+				db.getFirst();
+                break;
+			case 'get-last':
+				db.getLast();
                 break;
 			default:
 				console.log('no input');

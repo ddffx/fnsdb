@@ -19,5 +19,5 @@ docker build -t fnsdb .
 
 ### docker run commands
 ```
-docker run --rm fnsdb cli --version
+docker run --rm fnsdb cli find --url http://americablog.com/2017/01/michelle-obama-surprises-people-making-thank-videos.html
 ```

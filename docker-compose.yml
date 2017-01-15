@@ -12,4 +12,4 @@ services:
     working_dir: /usr/src/code
     environment: 
       DB_NAME: fnsdb.json
-      DB_PATH: /data/db
+      DB_PATH: /usr/src/code
